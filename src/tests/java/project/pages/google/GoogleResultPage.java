@@ -1,4 +1,4 @@
-package pages;
+package project.pages.google;
 
 import aquality.selenium.elements.interfaces.ILabel;
 import aquality.selenium.forms.Form;

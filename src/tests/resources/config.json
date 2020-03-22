@@ -1,3 +1,6 @@
 {
-  "google_url": "https://www.google.ru/"
+  "google_url": "https://www.google.ru/",
+  "steam_url": "https://store.steampowered.com/",
+  "wait_seconds": 5,
+  "sleep": 200
 }

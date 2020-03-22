@@ -1,4 +1,4 @@
-package pages;
+package project.pages.google;
 
 import aquality.selenium.browser.BrowserManager;
 import aquality.selenium.elements.interfaces.ITextBox;
