@@ -10,7 +10,9 @@
 
     <properties>
         <cucumberVersion>2.3.1</cucumberVersion>
-        <suite>TestSuite</suite>
+        <suite>TestNasaApiSuite</suite>
+<!--        <suite>TestSuite</suite>
+-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -41,13 +43,26 @@
             <version>${cucumberVersion}</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.1.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180130</version>
+        </dependency>
+
     </dependencies>
 
     <build>
 
         <testResources>
             <testResource>
-                <directory>src/tests/resources</directory>
+                <directory>src/test/resources</directory>
             </testResource>
         </testResources>
 
@@ -68,7 +83,7 @@
                 <version>2.20</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/tests/resources/${suite}.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/${suite}.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

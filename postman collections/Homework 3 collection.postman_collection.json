@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "b4fc289b-bfc8-4515-8075-8fce7ba918ca",
+		"name": "Homework 3 collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Astronomy Picture of the Day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?api_key=hblqsKYWM4mtJql3S4DvgKtjvOHt1nf2GdjIUfQC",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "hblqsKYWM4mtJql3S4DvgKtjvOHt1nf2GdjIUfQC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Asteroids by date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/neo/rest/v1/feed?start_date=2020-03-25&end_date=2020-03-26&api_key=hblqsKYWM4mtJql3S4DvgKtjvOHt1nf2GdjIUfQC",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"neo",
+						"rest",
+						"v1",
+						"feed"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2020-03-25"
+						},
+						{
+							"key": "end_date",
+							"value": "2020-03-26"
+						},
+						{
+							"key": "api_key",
+							"value": "hblqsKYWM4mtJql3S4DvgKtjvOHt1nf2GdjIUfQC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Images from Mars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=hblqsKYWM4mtJql3S4DvgKtjvOHt1nf2GdjIUfQC&sol=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"mars-photos",
+						"api",
+						"v1",
+						"rovers",
+						"curiosity",
+						"photos"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "hblqsKYWM4mtJql3S4DvgKtjvOHt1nf2GdjIUfQC"
+						},
+						{
+							"key": "sol",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
