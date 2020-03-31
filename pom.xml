@@ -10,9 +10,7 @@
 
     <properties>
         <cucumberVersion>2.3.1</cucumberVersion>
-        <suite>TestNasaApiSuite</suite>
-<!--        <suite>TestSuite</suite>
--->
+        <suite>TestGoogleSearchSuite</suite>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

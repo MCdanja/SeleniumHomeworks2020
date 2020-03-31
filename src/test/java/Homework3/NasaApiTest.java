@@ -30,7 +30,7 @@ public class NasaApiTest {
 
     @Test
     public void getAstronomyPictureOfTheDay() {
-        String[] expectedFields = {"copyright", "date", "explanation", "hdurl", "media_type", "service_version", "title", "url"};
+        String[] expectedFields = {"date", "explanation", "hdurl", "media_type", "service_version", "title", "url"};
         String endpoint = BASE_URI + "planetary/apod";
         Response response = baseRequest.get(endpoint);
         response.then().statusCode(SUCCESS);
