@@ -16,7 +16,7 @@ public class CommonFunctions {
         return getRandomString(length).concat("@mail.ru");
     }
 
-    private static String getRandomString(int length) {
+    public static String getRandomString(int length) {
         String lowerSymbols = "abcdefghijklmnopqrstuvwxyz";
         String upperSymbols = lowerSymbols.toUpperCase();
         String digits = "1234567890";
@@ -28,5 +28,10 @@ public class CommonFunctions {
             salt.append(SaltChars.charAt(index));
         }
         return salt.toString();
+    }
+
+    public static int getRandomPositiveNumber(int bound) {
+        Random random = new Random();
+        return random.nextInt(bound);
     }
 }

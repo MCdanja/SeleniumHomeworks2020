@@ -2,5 +2,10 @@
   "google_url": "https://www.google.ru/",
   "steam_url": "https://store.steampowered.com/",
   "wait_seconds": 5,
-  "sleep": 200
+  "sleep": 200,
+  "android_app": "\\src\\test\\resources\\app-debug.apk",
+  "device_name": "Phone",
+  "avd": "Nexus_5X_API_27",
+  "appium_url": "http://0.0.0.0:4723/wd/hub",
+  "max_expense_sum": 50000
 }
